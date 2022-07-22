@@ -1,0 +1,17 @@
+Intalação do Firebase:
+```bash
+npm install firebase
+```
+
+Instalação do Material-UI:
+```bash
+npm install material-icons@latest
+```
+```bash
+npm install material-icons@latest
+```
+
+Emojis:
+```bash
+npm i emoji-picker-react
+```
