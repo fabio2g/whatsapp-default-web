@@ -21,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     border-right: 1px solid #ddd;
+    overflow: hidden;
 }
 
 header {
@@ -40,6 +41,21 @@ header {
 
 .header--buttons {
     display: flex;
+}
+
+.header--btn {
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icons--btn {
+    padding: 0 5px;
+    color: #919191;
 }
 
 .contentarea {

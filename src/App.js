@@ -1,11 +1,6 @@
 import "./App.css";
 
-
 // Icons
-import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
-import DonutLargeIcon from "@mui/icons-material/DonutLarge";
-import ChatIcon from "@mui/icons-material/Chat";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 function App() {
     return (
@@ -20,17 +15,24 @@ function App() {
                         &ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyZmlsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
                         alt="avatar"
                     />
-                    {/* Botões */}
+                    {/* Botões header */}
                     <div className="header--botons">
                         <div className="header--btn">
                             <div>
-                                <DonutLargeIcon style={{ color: "#919191" }} />
+                                <span class="material-symbols-outlined icons--btn">
+                                    donut_large
+                                </span>
+                            </div>
+
+                            <div>
+                                <span class="material-symbols-outlined icons--btn">
+                                    chat
+                                </span>
                             </div>
                             <div>
-                                <ChatIcon style={{ color: "#919191" }} />
-                            </div>
-                            <div>
-                                <MoreVertIcon style={{ color: "#919191" }} />
+                                <span class="material-symbols-outlined icons--btn">
+                                    more_vert
+                                </span>
                             </div>
                         </div>
                     </div>
