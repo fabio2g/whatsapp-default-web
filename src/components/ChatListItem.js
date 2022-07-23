@@ -1,17 +1,19 @@
 import "./ChatListItem.css";
 
-const ChatListItem = () => {
+const ChatListItem = ({ onClick, active, data }) => {
     return (
-        <div className="chatListItem">
+        <div
+            className={`chatListItem ${active ? "active" : ""}`}
+            onClick={onClick}
+        >
             <img
                 className="chatListItem--avatar"
-                src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-1.2.1
-                &ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
+                src={data.image}
                 alt="avatar"
             />
             <div className="chatListItem--lines">
                 <div className="chatListItem--line">
-                    <div className="chatListItem--name">Jane Doe</div>
+                    <div className="chatListItem--name">{data.title}</div>
                     <div className="chatListItem--date">19:00</div>
                 </div>
                 <div className="chatList--line">

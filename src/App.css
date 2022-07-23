@@ -18,6 +18,7 @@ body {
 .sidebar {
     width: 35%;
     max-width: 415px;
+    min-width: 180px;
     display: flex;
     flex-direction: column;
     border-right: 1px solid #ddd;
@@ -101,4 +102,5 @@ header {
     background: rgba(0, 0, 0, 0.2);
 }
 .contentarea {
+    flex: 1;
 }
